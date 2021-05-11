@@ -26,11 +26,15 @@ class FoodDetail extends StatelessWidget {
             ],
           ),
           style: ElevatedButton.styleFrom(
-              primary: AppColors.primary,
-              shape: RoundedRectangleBorder(
-                  borderRadius: new BorderRadius.circular(10.0)),
-              padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
-              textStyle: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            primary: AppColors.primary,
+            shape: RoundedRectangleBorder(
+                borderRadius: new BorderRadius.circular(10.0)),
+            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+            textStyle: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           onPressed: () => {},
         ),
       ),
@@ -75,50 +79,51 @@ class FoodDetail extends StatelessWidget {
                   children: [
                     SizedBox(
                       child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            PrimaryText(
-                              text: 'Size',
-                              color: AppColors.lightGray,
-                              size: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            PrimaryText(
-                                text: 'Medium 14"',
-                                fontWeight: FontWeight.w600),
-                            SizedBox(
-                              height: 20,
-                            ),
-                            PrimaryText(
-                              text: 'Crust',
-                              color: AppColors.lightGray,
-                              size: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            PrimaryText(
-                                text: 'Thin Crust',
-                                fontWeight: FontWeight.w600),
-                            SizedBox(
-                              height: 20,
-                            ),
-                            PrimaryText(
-                              text: 'Delivery in',
-                              color: AppColors.lightGray,
-                              size: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            PrimaryText(
-                                text: '30 min', fontWeight: FontWeight.w600),
-                          ]),
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          PrimaryText(
+                            text: 'Size',
+                            color: AppColors.lightGray,
+                            size: 16,
+                            fontWeight: FontWeight.w500,
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          PrimaryText(
+                              text: 'Medium 14"', fontWeight: FontWeight.w600),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          PrimaryText(
+                            text: 'Crust',
+                            color: AppColors.lightGray,
+                            size: 16,
+                            fontWeight: FontWeight.w500,
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          PrimaryText(
+                            text: 'Thin Crust',
+                            fontWeight: FontWeight.w600,
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          PrimaryText(
+                            text: 'Delivery in',
+                            color: AppColors.lightGray,
+                            size: 16,
+                            fontWeight: FontWeight.w500,
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          PrimaryText(
+                              text: '30 min', fontWeight: FontWeight.w600),
+                        ],
+                      ),
                     ),
                     Container(
                       height: 200,
@@ -174,22 +179,23 @@ class FoodDetail extends StatelessWidget {
 
   Container ingredientCard(String imagePath) {
     return Container(
-        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-        margin: EdgeInsets.only(
-          right: 20,
-          top: 15,
-          bottom: 15,
-        ),
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            color: Colors.white,
-            boxShadow: [
-              BoxShadow(blurRadius: 10, color: Colors.grey[300]),
-            ]),
-        child: Image.asset(
-          imagePath,
-          width: 90,
-        ));
+      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+      margin: EdgeInsets.only(
+        right: 20,
+        top: 15,
+        bottom: 15,
+      ),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(blurRadius: 10, color: Colors.grey[300]),
+          ]),
+      child: Image.asset(
+        imagePath,
+        width: 90,
+      ),
+    );
   }
 
   Padding customAppBar(BuildContext context) {
