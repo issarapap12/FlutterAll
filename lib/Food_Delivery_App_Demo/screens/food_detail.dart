@@ -142,14 +142,6 @@ class FoodDetail extends StatelessWidget {
                     ),
                   ],
                 ),
-                // SizedBox(
-                //   height: 50,
-                // ),
-                // PrimaryText(
-                //     text: 'Ingredients', fontWeight: FontWeight.w700, size: 22),
-                // SizedBox(
-                //   height: 15,
-                // ),
               ],
             ),
           ),
