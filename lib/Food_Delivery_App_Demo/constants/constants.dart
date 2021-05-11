@@ -58,10 +58,4 @@ const ingredients = [
   {
     'imagePath': 'assets/onion.png',
   },
-  {
-    'imagePath': 'assets/tomato.png',
-  },
-  {
-    'imagePath': 'assets/onion.png',
-  },
 ];
