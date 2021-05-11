@@ -23,6 +23,7 @@ class _HomeFoodState extends State<HomeFood> {
         elevation: 0,
         title: Padding(
           padding: EdgeInsets.only(left: 10.w),
+          //รูปprofile
           child: CircleAvatar(
             radius: 25,
             backgroundImage: AssetImage('assets/man.jpeg'),
@@ -70,18 +71,11 @@ class _HomeFoodState extends State<HomeFood> {
                     ),
                     SizedBox(width: 10.w),
                     Expanded(
-                        child: TextField(
-                      decoration: InputDecoration(
-                        enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(
-                                width: 2.w, color: AppColors.lighterGray)),
-                        hintText: 'Search..',
-                        hintStyle: TextStyle(
-                            color: AppColors.lightGray,
-                            fontSize: 20,
-                            fontWeight: FontWeight.w500),
+                      child: TextField(
+                        decoration:
+                            inputDecoration.copyWith(hintText: 'Search...'),
                       ),
-                    )),
+                    ),
                     SizedBox(width: 20.w),
                   ],
                 ),
@@ -101,9 +95,10 @@ class _HomeFoodState extends State<HomeFood> {
                     itemBuilder: (context, index) => Padding(
                       padding: EdgeInsets.only(left: index == 0 ? 25 : 0),
                       child: foodCategoryCard(
-                          foodCategoryList[index]['imagePath'],
-                          foodCategoryList[index]['name'],
-                          index),
+                        foodCategoryList[index]['imagePath'],
+                        foodCategoryList[index]['name'],
+                        index,
+                      ),
                     ),
                   ),
                 ),

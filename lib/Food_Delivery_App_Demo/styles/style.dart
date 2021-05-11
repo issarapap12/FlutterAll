@@ -52,3 +52,14 @@ TextStyle p20 =
     TextStyle(fontFamily: 'Poppins', fontSize: 20.sp, color: Colors.white);
 TextStyle p24 =
     TextStyle(fontFamily: 'Poppins', fontSize: 24.sp, color: Colors.white);
+
+InputDecoration inputDecoration = InputDecoration(
+  enabledBorder: UnderlineInputBorder(
+    borderSide: BorderSide(width: 2.w, color: AppColors.lighterGray),
+  ),
+  hintStyle: TextStyle(
+    color: AppColors.lightGray,
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+  ),
+);

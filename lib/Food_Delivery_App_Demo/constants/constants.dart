@@ -1,3 +1,4 @@
+//เลือกประเภท
 const foodCategoryList = [
   {
     'imagePath': 'assets/pizza.svg',
@@ -12,6 +13,8 @@ const foodCategoryList = [
     'name': 'Soft Drinks',
   },
 ];
+
+//สินค้าหน้าhome
 const popularFoodList = [
   {
     'imagePath': 'assets/pizza.png',
@@ -41,10 +44,11 @@ const popularFoodList = [
     'imagePath': 'assets/chowmin.png',
     'name': 'Cheese Chowmin',
     'weight': 'Weight 500 gr',
-    'star': '4.0'
+    'star': '3.0'
   },
 ];
 
+//วัตถุดิบหน้า food_detail
 const ingredients = [
   {
     'imagePath': 'assets/tomato.png',

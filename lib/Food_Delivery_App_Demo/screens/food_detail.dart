@@ -121,7 +121,9 @@ class FoodDetail extends StatelessWidget {
                             height: 8,
                           ),
                           PrimaryText(
-                              text: '30 min', fontWeight: FontWeight.w600),
+                            text: '30 min',
+                            fontWeight: FontWeight.w600,
+                          ),
                         ],
                       ),
                     ),
@@ -207,6 +209,7 @@ class FoodDetail extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          //ปุ่มกลับหน้า home
           GestureDetector(
             onTap: () => Navigator.pop(context),
             child: Container(
