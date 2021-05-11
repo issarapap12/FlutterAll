@@ -1,4 +1,5 @@
 import 'package:CWCFlutter/Food_Delivery_App_Demo/screens/home_food.dart';
+import 'package:CWCFlutter/localization/pages/main_page.dart';
 import 'package:CWCFlutter/screens/home.dart';
 import 'package:CWCFlutter/screens/shared_prefer/shared_login.dart';
 
@@ -29,6 +30,9 @@ Widget display(BuildContext context, String text, Color color1, Color color2,
             break;
           case 3:
             page = HomeFood();
+            break;
+          case 4:
+            page = MainPage();
             break;
         }
         Navigator.push(

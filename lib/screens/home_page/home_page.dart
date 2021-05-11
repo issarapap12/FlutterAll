@@ -20,7 +20,9 @@ class _HomePageState extends State<HomePage> {
             showButton(
                 context, 'Food_Delivery_Demo', Colors.yellow, Colors.black, 3),
             showButton(context, 'Provider', Colors.green, Colors.white, 1),
-            showButton(context, 'Preferences', Colors.red, Colors.white, 2)
+            showButton(context, 'Preferences', Colors.red, Colors.white, 2),
+            showButton(context, 'Preferences', Colors.purple, Colors.white, 4),
+
             // showButtonYoutube(),
           ],
         ),

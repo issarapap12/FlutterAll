@@ -1,0 +1,5 @@
+{
+    "language": "ภาษาไทย",
+    "helloWorld": "สวัสดีชาวโลก",
+    "hello": "สวัสดี {username}"
+}

@@ -4,7 +4,7 @@ import 'package:CWCFlutter/Food_Delivery_App_Demo/screens/food_detail.dart';
 import 'package:CWCFlutter/Food_Delivery_App_Demo/styles/style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+// import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomeFood extends StatefulWidget {
   @override
@@ -22,7 +22,7 @@ class _HomeFoodState extends State<HomeFood> {
         backgroundColor: Colors.white,
         elevation: 0,
         title: Padding(
-          padding: EdgeInsets.only(left: 10.w),
+          padding: EdgeInsets.only(left: 10),
           //รูปprofile
           child: CircleAvatar(
             radius: 25,
@@ -39,19 +39,19 @@ class _HomeFoodState extends State<HomeFood> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(top: 25.h),
+            padding: EdgeInsets.only(top: 25),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(left: 20.w),
+                  padding: EdgeInsets.only(left: 20),
                   child: PrimaryText(
                     text: 'Food',
                     size: 22,
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 20.w),
+                  padding: EdgeInsets.only(left: 20),
                   child: PrimaryText(
                     text: 'Delivery',
                     height: 1.1,
@@ -59,27 +59,27 @@ class _HomeFoodState extends State<HomeFood> {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                SizedBox(height: 10.h),
+                SizedBox(height: 10),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(width: 20.w),
+                    SizedBox(width: 20),
                     Icon(
                       Icons.search,
                       color: AppColors.secondary,
                       size: 25,
                     ),
-                    SizedBox(width: 10.w),
+                    SizedBox(width: 10),
                     Expanded(
                       child: TextField(
                         decoration:
                             inputDecoration.copyWith(hintText: 'Search...'),
                       ),
                     ),
-                    SizedBox(width: 20.w),
+                    SizedBox(width: 20),
                   ],
                 ),
-                SizedBox(height: 25.h),
+                SizedBox(height: 25),
                 Padding(
                   padding: EdgeInsets.only(left: 20),
                   child: PrimaryText(
@@ -169,7 +169,7 @@ class _HomeFoodState extends State<HomeFood> {
                           size: 15,
                         ),
                         SizedBox(
-                          width: 10.w,
+                          width: 10,
                         ),
                         PrimaryText(
                           text: 'top of the week',
@@ -267,7 +267,7 @@ class _HomeFoodState extends State<HomeFood> {
         ),
       },
       child: Container(
-        margin: EdgeInsets.only(right: 20.w, top: 20.h, bottom: 20.h),
+        margin: EdgeInsets.only(right: 20, top: 20, bottom: 20),
         padding: EdgeInsets.symmetric(vertical: 25, horizontal: 20),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
@@ -283,7 +283,7 @@ class _HomeFoodState extends State<HomeFood> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SvgPicture.asset(imagePath, width: 40.w),
+            SvgPicture.asset(imagePath, width: 40),
             PrimaryText(text: name, fontWeight: FontWeight.w800, size: 16),
             RawMaterialButton(
                 onPressed: null,
