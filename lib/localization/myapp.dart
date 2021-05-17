@@ -21,10 +21,14 @@ class MyApp2 extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: title,
             theme: ThemeData(
-              scaffoldBackgroundColor: Colors.deepPurple.shade100,
+              // colorScheme: ColorScheme.dark(),
+              scaffoldBackgroundColor: Colors.yellow.shade900,
               appBarTheme: AppBarTheme(color: Colors.amber),
               primarySwatch: Colors.yellow,
               backgroundColor: Colors.white,
+              switchTheme: SwitchThemeData(
+                thumbColor: MaterialStateProperty.all(Colors.white),
+              ),
             ),
             locale: provider.locale,
             supportedLocales: L10n.all,

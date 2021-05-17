@@ -14,7 +14,7 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.2 <3.0.0"
 
 dependencies:
   flutter:
@@ -28,8 +28,12 @@ dependencies:
   flutter_svg: ^0.22.0
   flutter_screenutil: any
   easy_localization: ^3.0.0
-
-
+  flutter_secure_storage: ^4.2.0
+  retrofit: ^2.0.0
+  built_value: ^8.0.6
+  json_annotation: ^4.0.1
+  dio: ^4.0.0
+  
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -38,6 +42,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner: any
+  retrofit_generator: any
+  json_serializable: ^4.1.2
+  built_value_generator: ^8.0.6
 
 
 # For information on the generic Dart part of this file, see the

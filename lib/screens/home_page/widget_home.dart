@@ -1,7 +1,10 @@
 import 'package:CWCFlutter/Food_Delivery_App_Demo/screens/home_food.dart';
 import 'package:CWCFlutter/localization/pages/main_page.dart';
+// import 'package:CWCFlutter/retrofit/demo.dart';
 import 'package:CWCFlutter/screens/home.dart';
 import 'package:CWCFlutter/screens/shared_prefer/shared_login.dart';
+import 'package:CWCFlutter/secure_storage/items_widget.dart';
+import 'package:CWCFlutter/secure_storage/pages/user_page.dart';
 
 import 'package:flutter/material.dart';
 
@@ -34,6 +37,12 @@ Widget display(BuildContext context, String text, Color color1, Color color2,
           case 4:
             page = MainPage();
             break;
+          case 5:
+            page = UserPage();
+            break;
+          // case 5:
+          //   page = Demo();
+          //   break;
         }
         Navigator.push(
           context,

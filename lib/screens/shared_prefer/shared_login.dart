@@ -53,7 +53,7 @@ class _LoginState extends State<Login> {
       appBar: AppBar(
         title: Text('Login'),
       ),
-      body: Column(
+      body: ListView(
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.all(20.0),
